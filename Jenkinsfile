@@ -13,9 +13,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
-                        {
-                            git "https://github.com/Anuragkhalkodevops/DevProject-terraform-git-jenkins-aws.git"
+                       git "https://github.com/Anuragkhalkodevops/DevProject-terraform-git-jenkins-aws.git"
                         }
                     }
                 }
